@@ -1,0 +1,140 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGHtini4qPozG8=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "car",
+					"ownedElements": [
+						{
+							"_type": "UMLInterface",
+							"_id": "AAAAAAGHtknz16WTqS0=",
+							"_parent": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							},
+							"name": "batteryServiceInterface",
+							"visibility": "protected",
+							"isAbstract": true
+						},
+						{
+							"_type": "UMLInterface",
+							"_id": "AAAAAAGHtkqqnaWZ+CQ=",
+							"_parent": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							},
+							"name": "engineServiceInterface",
+							"visibility": "private",
+							"isAbstract": true
+						},
+						{
+							"_type": "UMLInterface",
+							"_id": "AAAAAAGHtkvM6aWirhQ=",
+							"_parent": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							},
+							"name": "tireServiceInterface",
+							"visibility": "private",
+							"isAbstract": true
+						}
+					],
+					"documentation": "sjbsl",
+					"stereotype": "",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGHtitjfaU8yag=",
+							"_parent": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							},
+							"name": "last_servise_date",
+							"type": "TIMESTAMP"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGHtjWSrqV/ap8=",
+							"_parent": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							},
+							"name": "current_mileage",
+							"type": "Intrger"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGHtjZtZ6WH9kQ=",
+							"_parent": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							},
+							"name": "last_service_mileage",
+							"type": "Integer"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGHti0MXKVLrlw=",
+							"_parent": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							},
+							"name": "needs_service",
+							"visibility": "protected",
+							"isAbstract": true
+						}
+					],
+					"isAbstract": true
+				},
+				{
+					"_type": "UMLInterface",
+					"_id": "AAAAAAGHtjN+p6VV6Is=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					}
+				},
+				{
+					"_type": "UMLInterface",
+					"_id": "AAAAAAGHtk6eBaWtaqo=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Interface1",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAGHtk6eIaXWeeI=",
+							"_parent": {
+								"$ref": "AAAAAAGHtk6eBaWtaqo="
+							},
+							"source": {
+								"$ref": "AAAAAAGHtk6eBaWtaqo="
+							},
+							"target": {
+								"$ref": "AAAAAAGHtini4qPozG8="
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
