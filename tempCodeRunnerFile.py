@@ -1,7 +1,7 @@
 
-from servicable import Servicable
+import servicable
 
-class Car(Servicable):
+class Car(servicable):
     def __init__(self, engine, battery):
         """
         type engine = Engine

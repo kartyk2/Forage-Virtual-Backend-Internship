@@ -1,8 +1,9 @@
-from abc import ABC
-import Engine
+import sys
+sys.path.append("e:\desktop\ForageApp")
+from engine.abs_Engine import Engine 
 
-class CapuletEngine(Engine, ABC):
-    def __init__(self, last_service_date, current_mileage, last_service_mileage):
+class CapuletEngine(Engine):
+    def __init__(self, current_mileage, last_service_mileage):
         self.name = "CapuletEngine"
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage

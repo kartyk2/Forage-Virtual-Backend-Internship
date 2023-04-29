@@ -1,8 +1,9 @@
+import sys
+sys.path.append("e:\desktop\ForageApp")
 from datetime import timedelta
-from abc import ABC
-import Battery
+from battery.abs_Battery import Battery
 
-class SpindlerBattery(Battery, ABC):
+class SpindlerBattery(Battery):
     def __init__(self, last_service_date, current_date):
         self.name = "SpindlerBattery"
         self.current_date = current_date

@@ -1,9 +1,10 @@
-from abc import ABC
-import Engine
+import sys
+sys.path.append("e:\desktop\ForageApp")
+from engine.abs_Engine import Engine
 
 
-class SternmanEngine(Engine, ABC):
-    def __init__(self, last_service_date, warning_light_is_on):
+class SternmanEngine(Engine):
+    def __init__(self, warning_light_is_on):
         self.name = "SternmanEngine"
         self.warning_light_is_on = warning_light_is_on
 
