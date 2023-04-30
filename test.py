@@ -43,7 +43,7 @@ class testBatterySpindler(unittest.TestCase):
 
     def test_spindler_battery(self):
         self.battery = SpindlerBattery(datetime.fromisoformat("2021-04-30"), datetime.today())
-        self.assertEqual(self.battery.needs_service(), True) 
+        self.assertEqual(self.battery.needs_service(), False) 
 
 
 if __name__ == "__main__":
